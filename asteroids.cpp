@@ -284,6 +284,7 @@ void check_mouse(XEvent *e);
 int check_keys(XEvent *e);
 void physics();
 void render();
+void showName();
 
 //==========================================================================
 // M A I N
@@ -831,6 +832,8 @@ void render()
 		glEnd();
 		++b;
 	}
+
+	showName();
 }
 
 

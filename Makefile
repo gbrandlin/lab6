@@ -14,8 +14,8 @@ LFLAGS = -lrt -lX11 -lGL
 
 all: asteroids
 
-asteroids: asteroids.cpp log.cpp timers.cpp
-	g++ $(CFLAGS) asteroids.cpp log.cpp timers.cpp \
+asteroids: asteroids.cpp log.cpp timers.cpp firstL.cpp
+	g++ $(CFLAGS) asteroids.cpp log.cpp timers.cpp firstL.cpp \
 	libggfonts.a -Wall $(LFLAGS) -o asteroids
 
 clean:
